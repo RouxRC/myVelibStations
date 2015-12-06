@@ -2,7 +2,7 @@
 <html lang="fr">
   <head>
     <meta charset="utf-8" />
-    <title>Mes stations velib de ma vie de parisien</title>
+    <title>Mes stations Vélib</title>
     <!-- Style -->
     <link href="./resources/js/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <link href="./resources/css/style.css" rel="stylesheet" />
@@ -23,7 +23,7 @@
   <body ng-app="Velib">
     <div class="container" ng-controller="VelibCtrl">
         <div class="group" ng-repeat="group in groups" id="group_{{group.id}}">
-            <h2 class="muted"><a href="#" ng-click="refresh(group.id)" class="btn btn-large btn-inverse">{{group.name}}</a></h2>
+            <h2 class="muted"><a href="#group_{{group.id}}" ng-click="refresh(group.id)" class="btn btn-large btn-inverse">{{group.name}}</a></h2>
             <p class="lead">Cliquer pour mettre à jour</p>
             <div class="station" ng-repeat="station in group.stations" id="station_{{station.id}}">
                 <h3 class="muted">{{station.address}}</h3>
