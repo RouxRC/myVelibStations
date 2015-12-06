@@ -4,7 +4,7 @@ Petite appli web simple affichant les places et vélos disponibles sur une séle
 
 Pratique pour mettre dans son smartphone ;)
 
-Adapté librement du [projet de @TDudouet](https://github.com/tdudouet/velib) (désormais disparu :( mais sous BSD lorsque copié) via la [reprise de @GLebourgeois](http://velib.guillaume-lebourgeois.fr).
+Adapté librement du [projet de @TDudouet](https://github.com/tdudouet/velib) (désormais disparu :( mais sous BSD lorsque copié) via la [reprise de @GLebourgeois](https://github.com/glebourgeois/websites).
 
 
 ## Installation
