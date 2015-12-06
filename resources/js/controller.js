@@ -16,6 +16,7 @@ angular.module('Velib.controllers', ['Velib.config'])
     });
 
     $scope.refresh = function(group_id) {
+        var fresh = new Date() - 1000 * 60 * 30;
         $scope.groups.filter(function(group){
             return group.id == group_id;
         }).forEach(function(group){
@@ -26,6 +27,7 @@ angular.module('Velib.controllers', ['Velib.config'])
                     s.available = data.available;
                     s.free = data.free;
                     s.date = data.updated * 1000;
+                    s.outdated = s.date < fresh;
                     s.class = "";
                     s.fetching = false;
                 }).error(function(data, status, headers, config) {

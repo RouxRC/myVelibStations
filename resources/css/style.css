@@ -37,6 +37,10 @@ tr.caption {
     margin: 15px 0px;
 }
 
+.station.outdated {
+    opacity: 0.3;
+}
+
 .station table {
     margin: 0px auto;
     width: 100%;
