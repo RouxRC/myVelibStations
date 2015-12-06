@@ -1,0 +1,20 @@
+'use strict';
+// Liste complète des stations: http://www.velib.paris.fr/service/carto
+angular.module('Velib.config', [])
+.constant('GROUPS', [
+  {
+    name: "Nation",
+    stations: [
+      { id: 11014, address: "Nation" },
+      { id: 11013, address: "Nation Nord" },
+      { id: 12014, address: "Nation Sud" },
+      { id: 20001, address: "Castorama" }
+    ]
+  },
+  {
+    name: "Ailleurs",
+    stations: [
+      { id: 7006, address: "Quai VOLTAIRE" }
+    ]
+  }
+]);
